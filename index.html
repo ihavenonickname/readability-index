@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Readability Index</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <textarea id="main-textarea" cols="80" rows="30"></textarea>
+
+    <div id="loading-div" class="invisible">
+        <p>
+            Analyzing text...
+        </p>
+    </div>
+
+    <div id="results-div">
+        <p>
+            Characters: <span id="characters-span">0</span>
+        </p>
+        <p>
+            Words: <span id="words-span">0</span>
+        </p>
+        <p>
+            Sentences: <span id="sentences-span">0</span>
+        </p>
+        <p>
+            Automated Readability Index: <span id="ari-span">--</span>
+        </p>
+    </div>
+</body>
+<script src="ari.js"></script>
+<script src="page.js"></script>
+</html>
